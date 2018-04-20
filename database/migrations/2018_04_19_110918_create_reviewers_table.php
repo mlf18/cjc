@@ -16,8 +16,10 @@ class CreateReviewersTable extends Migration
         Schema::create('reviewers', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
+            $table->integer('kategori_id')->unsigned();
             $table->string('nama',255);
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('kategori_id')->references('id')->on('kategoris')->onDelete('cascade');
         });
     }
 

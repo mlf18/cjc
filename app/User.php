@@ -26,4 +26,12 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function superadmin(){
+        return $this->hasOne('App\Superadmin');
+    }
+
+    public function reviewer(){
+        return $this->hasOne('App\Reviewer');
+    }
 }

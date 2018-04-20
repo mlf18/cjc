@@ -30,6 +30,11 @@ Route::get('/home', 'HomeController@index');
 Route::get('/seminar', function () {
     return view('dashboard.seminar');
 });
+
+Route::get('/admin', function () {
+    return view('tabler.index');
+});
+
 Route::get('/kontak', function () {
     return view('dashboard.kontak');
 });

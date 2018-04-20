@@ -40,18 +40,23 @@ class PemakalahController extends Controller
         //
         $pemakalah=new Pemakalah();
         $pemakalah->nama=$request->input('name');
-        $pemakalah->judul=$request->input('judul');
-        $pemakalah->kategori_id=$request->input('kategori');
         $pemakalah->jabatan=$request->input('jabatan');
         $pemakalah->instansi=$request->input('instansi');
         $pemakalah->alamat_instansi=$request->input('alamat_instansi');
         $pemakalah->telp_faxs=$request->input('telp');
         $pemakalah->hp=$request->input('hp');
         $pemakalah->email=$request->input('email');
-        if($request->hasFile('abstrak')){
-            $fileName='abstrak'.time().'.'.$request->file('abstrak')->getClientOriginalExtension();
-            $request->file('abstrak')->move('file/', $fileName);
-            $pemakalah->abstrak=$fileName;
+        $pemakalah->jenis=$request->input('jenis');
+        $pemakalah->judul='';
+        $pemakalah->abstrak='';
+        if ($request->input('jenis')=='pemakalah'){
+            $pemakalah->judul=$request->input('judul');
+            $pemakalah->kategori_id=$request->input('kategori');
+            if($request->hasFile('abstrak')){
+                $fileName='abstrak'.time().'.'.$request->file('abstrak')->getClientOriginalExtension();
+                $request->file('abstrak')->move('file/', $fileName);
+                $pemakalah->abstrak=$fileName;
+            }
         }
         if ($pemakalah->save()){
             return redirect('/daftarsemreg')->with('success','Berhasil');    

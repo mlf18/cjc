@@ -428,6 +428,7 @@
     $('input[type=radio][name=jenis]').change(function() {
         if (this.value == 'peserta') {
             $(".dis").attr("disabled", true);
+            $(".dis").val('');
         }else{
           $(".dis").removeAttr("disabled");
           console.log('ada');
