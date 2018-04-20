@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Pemakalah;
 
-class PemakalahController extends Controller
+class ReviewerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +14,6 @@ class PemakalahController extends Controller
     public function index()
     {
         //
-        $pemakalah=Pemakalah::all();
-        return ($pemakalah);
     }
 
     /**
@@ -38,26 +35,6 @@ class PemakalahController extends Controller
     public function store(Request $request)
     {
         //
-        $pemakalah=new Pemakalah();
-        $pemakalah->nama=$request->input('name');
-        $pemakalah->judul=$request->input('judul');
-        $pemakalah->kategori_id=$request->input('kategori');
-        $pemakalah->jabatan=$request->input('jabatan');
-        $pemakalah->instansi=$request->input('instansi');
-        $pemakalah->alamat_instansi=$request->input('alamat_instansi');
-        $pemakalah->telp_faxs=$request->input('telp');
-        $pemakalah->hp=$request->input('hp');
-        $pemakalah->email=$request->input('email');
-        if($request->hasFile('abstrak')){
-            $fileName='abstrak'.time().'.'.$request->file('abstrak')->getClientOriginalExtension();
-            $request->file('abstrak')->move('file/', $fileName);
-            $pemakalah->abstrak=$fileName;
-        }
-        if ($pemakalah->save()){
-            return redirect('/daftarsemreg')->with('success','Berhasil');    
-        }else{
-            return redirect('/daftarsemreg')->with('error','Gagal');    
-        }
     }
 
     /**

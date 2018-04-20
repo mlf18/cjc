@@ -21,12 +21,14 @@ class CreatePemakalahsTable extends Migration
               ->references('id')->on('kategoris')
               ->onDelete('cascade');
             $table->string('judul',255);
+            $table->string('jenis',255);
             $table->string('jabatan',255);
             $table->string('instansi',255);
             $table->string('alamat_instansi',255);
             $table->string('telp_faxs',255);
             $table->string('hp',255);
             $table->string('email',255);
+            $table->string('abstrak',255);
             $table->timestamps();
         });
     }
