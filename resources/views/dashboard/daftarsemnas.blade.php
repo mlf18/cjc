@@ -13,89 +13,90 @@
   <br />
   <div class="container">
 
-  {!! Form::open(['url'=>'#','class'=>'form-horizontal']) !!}
+  {!! Form::open(['url'=>'pemakalahs','class'=>'form-horizontal','method'=>'post','file'=>'true']) !!}
+  <input type="hidden" name="lingkup" value="nasional">
     <div class="form-gorup">
       {!! Form::label('judul', 'Nama Lengkap dan Gelar', ['class'=>'control-label col-md-12']) !!}
       <div class="col-md-12">
-        {!! Form::text('judul', null, ['class'=>'form-control']) !!}
+        {!! Form::text('name', null, ['class'=>'form-control']) !!}
         {!! $errors->has('judul')?$errors->first('judul'):'' !!}
       </div>
     </div> <br />
     <div class="form-gorup">
       <div class="col-md-12">
       {!! Form::label('kategori', 'Jenis Kepesertaan', ['class'=>'control-label']) !!} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       {!! Form::radio('name', 'value', true); !!} Pemakalah
-        {!! Form::radio('name', 'value', true); !!} Peserta Aktif
+       {!! Form::radio('jenis', 'pemakalah', true); !!} Pemakalah
+        {!! Form::radio('jenis', 'peserta', false); !!} Peserta Aktif
       </div>
     </div> <br />
     <div class="form-gorup" style="margin-bottom: 14px;">
       {!! Form::label('berita', 'Topik Makalah', ['class'=>'control-label col-md-12']) !!}
       <div class="col-md-12">
-        {!! Form::select('size', array('A' => 'Pembangunan Manusia melalui Pengurangan Kemiskinan dan Peningkatan Pelayanan Dasar', 'B' => 'Pengurangan Kesenjangan antar wilayah melalui Penguatan Konektivitas dan Kemaritiman', 'C' => 'Peningkatan Nilai Tambah ekonomi melalui pertanian, Industri, dan Jasa Produktif', 'D' => 'Pemantapan Ketahanan Energi, Pangan, dan Sumber Daya Air', 'E' => 'Stabilitas Keamanan Nasional dan Kesuksesan Pemilu')); !!}
+        {!! Form::select('kategori', array('9' => 'Pembangunan Manusia melalui Pengurangan Kemiskinan dan Peningkatan Pelayanan Dasar', '10' => 'Pengurangan Kesenjangan antar wilayah melalui Penguatan Konektivitas dan Kemaritiman', '11' => 'Peningkatan Nilai Tambah ekonomi melalui pertanian, Industri, dan Jasa Produktif', '12' => 'Pemantapan Ketahanan Energi, Pangan, dan Sumber Daya Air', '13' => 'Stabilitas Keamanan Nasional dan Kesuksesan Pemilu'),null,['class'=>'form-control dis']); !!}
       </div>
     </div>
     <div class="form-gorup" style="margin-bottom: 14px;">
       {!! Form::label('berita', 'Judul Makalah', ['class'=>'control-label col-md-12']) !!}
       <div class="col-md-12">
-        {!! Form::textArea('berita', null, ['class'=>'form-control']) !!}
+        {!! Form::textArea('judul', null, ['class'=>'form-control dis']) !!}
         {!! $errors->has('berita')?$errors->first('berita'):'' !!}
       </div>
     </div>
     <div class="form-gorup">
       {!! Form::label('kategori', 'Jabatan', ['class'=>'control-label col-md-12']) !!}
       <div class="col-md-12">
-        {!! Form::text('kategori', null, ['class'=>'form-control']) !!}
+        {!! Form::text('jabatan', null, ['class'=>'form-control']) !!}
         {!! $errors->has('kategori')?$errors->first('kategori'):'' !!}
       </div>
     </div>
     <div class="form-gorup">
       {!! Form::label('kategori', 'Instansi', ['class'=>'control-label col-md-12']) !!}
       <div class="col-md-12">
-        {!! Form::text('kategori', null, ['class'=>'form-control']) !!}
+        {!! Form::text('instansi', null, ['class'=>'form-control']) !!}
         {!! $errors->has('kategori')?$errors->first('kategori'):'' !!}
       </div>
     </div>
     <div class="form-gorup">
       {!! Form::label('kategori', 'Alamat Instansi', ['class'=>'control-label col-md-12']) !!}
       <div class="col-md-12">
-        {!! Form::text('kategori', null, ['class'=>'form-control']) !!}
+        {!! Form::text('alamat_instansi', null, ['class'=>'form-control']) !!}
         {!! $errors->has('kategori')?$errors->first('kategori'):'' !!}
       </div>
     </div><div class="form-gorup">
       {!! Form::label('kategori', 'Telp/Faxs', ['class'=>'control-label col-md-12']) !!}
       <div class="col-md-12">
-        {!! Form::text('kategori', null, ['class'=>'form-control']) !!}
+        {!! Form::text('telp', null, ['class'=>'form-control']) !!}
         {!! $errors->has('kategori')?$errors->first('kategori'):'' !!}
       </div>
     </div><div class="form-gorup">
       {!! Form::label('kategori', 'No Hp', ['class'=>'control-label col-md-12']) !!}
       <div class="col-md-12">
-        {!! Form::text('kategori', null, ['class'=>'form-control']) !!}
+        {!! Form::text('hp', null, ['class'=>'form-control']) !!}
         {!! $errors->has('kategori')?$errors->first('kategori'):'' !!}
       </div>
     </div>
     <div class="form-gorup">
       {!! Form::label('kategori', 'Alamat Email', ['class'=>'control-label col-md-12']) !!}
       <div class="col-md-12">
-        {!! Form::text('kategori', null, ['class'=>'form-control']) !!}
+        {!! Form::text('email', null, ['class'=>'form-control']) !!}
         {!! $errors->has('kategori')?$errors->first('kategori'):'' !!}
       </div>
     </div>
     <br />
+    
     <div class="col-lg-offset-4 col-lg-4">
     <h8>File Abstrak</h8>
-      <form action="" enctype="multipart/form-data" method="post">
-        <input type="file" name="image"> <br />
-      </form>
+        <input type="file" name="abstrak" class="dis"> <br />
     </div>
+
     <div class="form-gorup">
-      <center><div class="col-md-offset-2 col-md-10">
-        <input type="submit" value="Submit" class="btn btn-primary" style="margin-top: 14px;">
-      </div></center>
+      <center>
+        <div class="col-md-offset-2 col-md-10"><input type="submit" value="Submit" class="btn btn-primary" style="margin-top: 14px;"></div>
+        
+    </center>
     </div>
-  {!! Form::close() !!}
 </div>
 <br />
 <br />
-
+{!! Form::close() !!}
 @stop

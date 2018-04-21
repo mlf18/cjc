@@ -49,6 +49,7 @@ class PemakalahController extends Controller
         $pemakalah->jenis=$request->input('jenis');
         $pemakalah->judul='';
         $pemakalah->abstrak='';
+        $pemakalah->lingkup=$request->input('lingkup');
         if ($request->input('jenis')=='pemakalah'){
             $pemakalah->judul=$request->input('judul');
             $pemakalah->kategori_id=$request->input('kategori');

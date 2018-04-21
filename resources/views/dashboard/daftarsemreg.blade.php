@@ -14,6 +14,7 @@
   <div class="container">
 
   {!! Form::open(['url'=>'pemakalahs','class'=>'form-horizontal','method'=>'post',"enctype"=>"multipart/form-data"]) !!}
+  <input type="hidden" name="lingkup" value="regional">
     <div class="form-gorup">
       {!! Form::label('name', 'Nama Lengkap dan Gelar', ['class'=>'control-label col-md-12']) !!}
       <div class="col-md-12">

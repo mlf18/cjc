@@ -21,20 +21,20 @@
     <script src="/tablerdev/dist/assets/js/require.min.js"></script>
     <script>
       requirejs.config({
-          baseUrl: './tablerdev/dist/assets'
+          baseUrl: '/tablerdev/dist/'
       });
     </script>
     <!-- Dashboard Core -->
-    <link href="./assets/css/dashboard.css" rel="stylesheet" />
-    <script src="./assets/js/dashboard.js"></script>
+    <link href="tablerdev/dist/assets/css/dashboard.css" rel="stylesheet" />
+    <script src="tablerdev/dist/assets/js/dashboard.js"></script>
     <!-- c3.js Charts Plugin -->
-    <link href="./assets/plugins/charts-c3/plugin.css" rel="stylesheet" />
-    <script src="./assets/plugins/charts-c3/plugin.js"></script>
+    <link href="tablerdev/dist/assets/plugins/charts-c3/plugin.css" rel="stylesheet" />
+    <script src="tablerdev/dist/assets/plugins/charts-c3/plugin.js"></script>
     <!-- Google Maps Plugin -->
-    <link href="./assets/plugins/maps-google/plugin.css" rel="stylesheet" />
-    <script src="./assets/plugins/maps-google/plugin.js"></script>
+    <link href="tablerdev/dist/assets/plugins/maps-google/plugin.css" rel="stylesheet" />
+    <script src="tablerdev/dist/assets/plugins/maps-google/plugin.js"></script>
     <!-- Input Mask Plugin -->
-    <script src="./assets/plugins/input-mask/plugin.js"></script>
+    <script src="tablerdev/dist/assets/plugins/input-mask/plugin.js"></script>
   </head>
   <body class="">
     <div class="page">
@@ -43,7 +43,7 @@
           <div class="container">
             <div class="d-flex">
               <a class="header-brand" href="./index.html">
-                <img src="./demo/brand/tabler.svg" class="header-brand-img" alt="tabler logo">
+                <img src="tablerdev/dist/demo/brand/tabler.svg" class="header-brand-img" alt="tabler logo">
               </a>
               <div class="d-flex order-lg-2 ml-auto">
                 <div class="nav-item d-none d-md-flex">
@@ -56,21 +56,21 @@
                   </a>
                   <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                     <a href="#" class="dropdown-item d-flex">
-                      <span class="avatar mr-3 align-self-center" style="background-image: url(demo/faces/male/41.jpg)"></span>
+                      <span class="avatar mr-3 align-self-center" style="background-image: url(tablerdev/dist/demo/faces/male/41.jpg)"></span>
                       <div>
                         <strong>Nathan</strong> pushed new commit: Fix page load performance issue.
                         <div class="small text-muted">10 minutes ago</div>
                       </div>
                     </a>
                     <a href="#" class="dropdown-item d-flex">
-                      <span class="avatar mr-3 align-self-center" style="background-image: url(demo/faces/female/1.jpg)"></span>
+                      <span class="avatar mr-3 align-self-center" style="background-image: url(tablerdev/dist/demo/faces/female/1.jpg)"></span>
                       <div>
                         <strong>Alice</strong> started new task: Tabler UI design.
                         <div class="small text-muted">1 hour ago</div>
                       </div>
                     </a>
                     <a href="#" class="dropdown-item d-flex">
-                      <span class="avatar mr-3 align-self-center" style="background-image: url(demo/faces/female/18.jpg)"></span>
+                      <span class="avatar mr-3 align-self-center" style="background-image: url(tablerdev/dist/demo/faces/female/18.jpg)"></span>
                       <div>
                         <strong>Rose</strong> deployed new version of NodeJS REST Api V3
                         <div class="small text-muted">2 hours ago</div>
@@ -82,7 +82,7 @@
                 </div>
                 <div class="dropdown">
                   <a href="#" class="nav-link pr-0 leading-none" data-toggle="dropdown">
-                    <span class="avatar" style="background-image: url(./demo/faces/female/25.jpg)"></span>
+                    <span class="avatar" style="background-image: url(tablerdev/dist/demo/faces/female/25.jpg)"></span>
                     <span class="ml-2 d-none d-lg-block">
                       <span class="text-default">Jane Pearson</span>
                       <small class="text-muted d-block mt-1">Administrator</small>
@@ -282,7 +282,7 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td class="w-1"><span class="avatar" style="background-image: url(./demo/faces/male/9.jpg)"></span></td>
+                          <td class="w-1"><span class="avatar" style="background-image: url(tablerdev/dist/demo/faces/male/9.jpg)"></span></td>
                           <td>Ronald Bradley</td>
                           <td>Initial commit</td>
                           <td class="text-nowrap">May 6, 2018</td>
@@ -296,21 +296,21 @@
                           <td><a href="#" class="icon"><i class="fe fe-trash"></i></a></td>
                         </tr>
                         <tr>
-                          <td><span class="avatar" style="background-image: url(./demo/faces/female/1.jpg)"></span></td>
+                          <td><span class="avatar" style="background-image: url(tablerdev/dist/demo/faces/female/1.jpg)"></span></td>
                           <td>Beverly Armstrong</td>
                           <td>Left sidebar adjustments</td>
                           <td class="text-nowrap">April 15, 2018</td>
                           <td><a href="#" class="icon"><i class="fe fe-trash"></i></a></td>
                         </tr>
                         <tr>
-                          <td><span class="avatar" style="background-image: url(./demo/faces/male/4.jpg)"></span></td>
+                          <td><span class="avatar" style="background-image: url(tablerdev/dist/demo/faces/male/4.jpg)"></span></td>
                           <td>Bobby Knight</td>
                           <td>Topbar dropdown style</td>
                           <td class="text-nowrap">April 8, 2018</td>
                           <td><a href="#" class="icon"><i class="fe fe-trash"></i></a></td>
                         </tr>
                         <tr>
-                          <td><span class="avatar" style="background-image: url(./demo/faces/female/11.jpg)"></span></td>
+                          <td><span class="avatar" style="background-image: url(tablerdev/dist/demo/faces/female/11.jpg)"></span></td>
                           <td>Sharon Wells</td>
                           <td>Fixes #625</td>
                           <td class="text-nowrap">April 9, 2018</td>
@@ -569,12 +569,12 @@
             <div class="row row-cards row-deck">
               <div class="col-lg-6">
                 <div class="card card-aside">
-                  <a href="#" class="card-aside-column" style="background-image: url(./demo/photos/david-klaasen-54203-500.jpg)"></a>
+                  <a href="#" class="card-aside-column" style="background-image: url(tablerdev/dist/demo/photos/david-klaasen-54203-500.jpg)"></a>
                   <div class="card-body d-flex flex-column">
                     <h4><a href="#">And this isn't my nose. This is a false one.</a></h4>
                     <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice! …Are you suggesting that coconuts migr...</div>
                     <div class="d-flex align-items-center pt-5 mt-auto">
-                      <div class="avatar avatar-md mr-3" style="background-image: url(./demo/faces/female/18.jpg)"></div>
+                      <div class="avatar avatar-md mr-3" style="background-image: url(tablerdev/dist/demo/faces/female/18.jpg)"></div>
                       <div>
                         <a href="./profile.html" class="text-default">Rose Bradley</a>
                         <small class="d-block text-muted">3 days ago</small>
@@ -588,12 +588,12 @@
               </div>
               <div class="col-lg-6">
                 <div class="card card-aside">
-                  <a href="#" class="card-aside-column" style="background-image: url(./demo/photos/david-marcu-114194-500.jpg)"></a>
+                  <a href="#" class="card-aside-column" style="background-image: url(tablerdev/dist/demo/photos/david-marcu-114194-500.jpg)"></a>
                   <div class="card-body d-flex flex-column">
                     <h4><a href="#">Well, I didn't vote for you.</a></h4>
                     <div class="text-muted">Well, we did do the nose. Why? Shut up! Will you shut up?! You don't frighten us, English pig-dog...</div>
                     <div class="d-flex align-items-center pt-5 mt-auto">
-                      <div class="avatar avatar-md mr-3" style="background-image: url(./demo/faces/male/16.jpg)"></div>
+                      <div class="avatar avatar-md mr-3" style="background-image: url(tablerdev/dist/demo/faces/male/16.jpg)"></div>
                       <div>
                         <a href="./profile.html" class="text-default">Peter Richards</a>
                         <small class="d-block text-muted">3 days ago</small>
@@ -625,7 +625,7 @@
                       <tbody>
                         <tr>
                           <td class="text-center">
-                            <div class="avatar d-block" style="background-image: url(demo/faces/female/26.jpg)">
+                            <div class="avatar d-block" style="background-image: url(tablerdev/dist/demo/faces/female/26.jpg)">
                               <span class="avatar-status bg-green"></span>
                             </div>
                           </td>
@@ -676,7 +676,7 @@
                         </tr>
                         <tr>
                           <td class="text-center">
-                            <div class="avatar d-block" style="background-image: url(demo/faces/female/17.jpg)">
+                            <div class="avatar d-block" style="background-image: url(tablerdev/dist/demo/faces/female/17.jpg)">
                               <span class="avatar-status bg-green"></span>
                             </div>
                           </td>
@@ -727,7 +727,7 @@
                         </tr>
                         <tr>
                           <td class="text-center">
-                            <div class="avatar d-block" style="background-image: url(demo/faces/female/21.jpg)">
+                            <div class="avatar d-block" style="background-image: url(tablerdev/dist/demo/faces/female/21.jpg)">
                               <span class="avatar-status bg-green"></span>
                             </div>
                           </td>
@@ -778,7 +778,7 @@
                         </tr>
                         <tr>
                           <td class="text-center">
-                            <div class="avatar d-block" style="background-image: url(demo/faces/male/32.jpg)">
+                            <div class="avatar d-block" style="background-image: url(tablerdev/dist/demo/faces/male/32.jpg)">
                               <span class="avatar-status bg-green"></span>
                             </div>
                           </td>
@@ -829,7 +829,7 @@
                         </tr>
                         <tr>
                           <td class="text-center">
-                            <div class="avatar d-block" style="background-image: url(demo/faces/female/12.jpg)">
+                            <div class="avatar d-block" style="background-image: url(tablerdev/dist/demo/faces/female/12.jpg)">
                               <span class="avatar-status bg-green"></span>
                             </div>
                           </td>
@@ -880,7 +880,7 @@
                         </tr>
                         <tr>
                           <td class="text-center">
-                            <div class="avatar d-block" style="background-image: url(demo/faces/female/4.jpg)">
+                            <div class="avatar d-block" style="background-image: url(tablerdev/dist/demo/faces/female/4.jpg)">
                               <span class="avatar-status bg-green"></span>
                             </div>
                           </td>
@@ -931,7 +931,7 @@
                         </tr>
                         <tr>
                           <td class="text-center">
-                            <div class="avatar d-block" style="background-image: url(demo/faces/female/27.jpg)">
+                            <div class="avatar d-block" style="background-image: url(tablerdev/dist/demo/faces/female/27.jpg)">
                               <span class="avatar-status bg-green"></span>
                             </div>
                           </td>
@@ -982,7 +982,7 @@
                         </tr>
                         <tr>
                           <td class="text-center">
-                            <div class="avatar d-block" style="background-image: url(demo/faces/male/20.jpg)">
+                            <div class="avatar d-block" style="background-image: url(tablerdev/dist/demo/faces/male/20.jpg)">
                               <span class="avatar-status bg-green"></span>
                             </div>
                           </td>
@@ -1130,7 +1130,7 @@
                       <li class="list-separated-item">
                         <div class="row align-items-center">
                           <div class="col-auto">
-                            <span class="avatar avatar-md d-block" style="background-image: url(demo/faces/female/12.jpg)"></span>
+                            <span class="avatar avatar-md d-block" style="background-image: url(tablerdev/dist/demo/faces/female/12.jpg)"></span>
                           </div>
                           <div class="col">
                             <div>
@@ -1155,7 +1155,7 @@
                       <li class="list-separated-item">
                         <div class="row align-items-center">
                           <div class="col-auto">
-                            <span class="avatar avatar-md d-block" style="background-image: url(demo/faces/female/21.jpg)"></span>
+                            <span class="avatar avatar-md d-block" style="background-image: url(tablerdev/dist/demo/faces/female/21.jpg)"></span>
                           </div>
                           <div class="col">
                             <div>
@@ -1180,7 +1180,7 @@
                       <li class="list-separated-item">
                         <div class="row align-items-center">
                           <div class="col-auto">
-                            <span class="avatar avatar-md d-block" style="background-image: url(demo/faces/female/29.jpg)"></span>
+                            <span class="avatar avatar-md d-block" style="background-image: url(tablerdev/dist/demo/faces/female/29.jpg)"></span>
                           </div>
                           <div class="col">
                             <div>
@@ -1205,7 +1205,7 @@
                       <li class="list-separated-item">
                         <div class="row align-items-center">
                           <div class="col-auto">
-                            <span class="avatar avatar-md d-block" style="background-image: url(demo/faces/female/2.jpg)"></span>
+                            <span class="avatar avatar-md d-block" style="background-image: url(tablerdev/dist/demo/faces/female/2.jpg)"></span>
                           </div>
                           <div class="col">
                             <div>
@@ -1230,7 +1230,7 @@
                       <li class="list-separated-item">
                         <div class="row align-items-center">
                           <div class="col-auto">
-                            <span class="avatar avatar-md d-block" style="background-image: url(demo/faces/male/34.jpg)"></span>
+                            <span class="avatar avatar-md d-block" style="background-image: url(tablerdev/dist/demo/faces/male/34.jpg)"></span>
                           </div>
                           <div class="col">
                             <div>
@@ -1255,7 +1255,7 @@
                       <li class="list-separated-item">
                         <div class="row align-items-center">
                           <div class="col-auto">
-                            <span class="avatar avatar-md d-block" style="background-image: url(demo/faces/female/11.jpg)"></span>
+                            <span class="avatar avatar-md d-block" style="background-image: url(tablerdev/dist/demo/faces/female/11.jpg)"></span>
                           </div>
                           <div class="col">
                             <div>

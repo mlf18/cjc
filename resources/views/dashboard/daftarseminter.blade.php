@@ -13,7 +13,8 @@
   <br />
   <div class="container">
 
-  {!! Form::open(['url'=>'#','class'=>'form-horizontal']) !!}
+  {!! Form::open(['url'=>'pemakalahs','class'=>'form-horizontal','method'=>'post','file'=>'true']) !!}
+  <input type="hidden" name="lingkup" value="internasional">
     <div class="form-gorup">
       {!! Form::label('judul', 'Nama Lengkap dan Gelar', ['class'=>'control-label col-md-12']) !!}
       <div class="col-md-12">

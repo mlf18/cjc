@@ -34,4 +34,24 @@ class User extends Authenticatable
     public function reviewer(){
         return $this->hasOne('App\Reviewer');
     }
+
+    public function reviewer(){
+        return $this->hasMany('App\Agenda');
+    }
+
+    public function reviewer(){
+        return $this->hasMany('App\Berita');
+    }
+
+    public function reviewer(){
+        return $this->hasMany('App\Galeri');
+    }
+
+    public function reviewer(){
+        return $this->hasMany('App\Pengumuman');
+    }
+
+    public function slider(){
+        return $this->hasMany('App\Slider');
+    }
 }

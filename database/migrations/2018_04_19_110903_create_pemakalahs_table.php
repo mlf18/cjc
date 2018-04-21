@@ -16,12 +16,13 @@ class CreatePemakalahsTable extends Migration
         Schema::create('pemakalahs', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nama',255);
-            $table->integer('kategori_id')->unsigned();
+            $table->integer('kategori_id')->unsigned()->nullable();
             $table->foreign('kategori_id')
               ->references('id')->on('kategoris')
               ->onDelete('cascade');
             $table->string('judul',255);
             $table->string('jenis',255);
+            $table->string('lingkup',255);
             $table->string('jabatan',255);
             $table->string('instansi',255);
             $table->string('alamat_instansi',255);

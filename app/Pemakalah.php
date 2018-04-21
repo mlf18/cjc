@@ -7,7 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Pemakalah extends Model
 {
     //
-    public function pemakalah(){
+    public function kategori(){
     	return $this->belongsTo('App\Kategori');
+    }
+
+    public function pengumuman(){
+    	return $this->hasOne('App\Pengumuman');
     }
 }
